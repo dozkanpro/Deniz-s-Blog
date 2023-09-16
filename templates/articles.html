@@ -1,0 +1,32 @@
+{% include "header.html" %}
+
+
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='assets/img/articles.jpg') }})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>My Articles</h1>
+                            <span class="subheading">2 articles I had were published during my graduate studies.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2><a href="https://www.researchgate.net/publication/337635003_Agile_Project_Management_Tools_A_Brief_Comprative_View"> Agile Project Management Tools: A Brief Comparative View.</a></h2>
+                        <p><b>Abstract:</b>
+                            Agile methodologies are becoming popular in software development. Managers are required to understand project's progress and product quality without development documents. During Agile practices of the teams and organizations, Agile project management tools are frequently used. The use of such tools leads to achieving speed and efficiency, affects the quality of the software. The quality of final product is mostly related with to project management. Accordingly, the paper provides brief comparative perspective about the popular project management tools for agile projects. 16 popular Agile project management tools have been presented helping agile developers to plan and manage their tasks in an efficient manner. Taiga, Axosoft, Agielan, Planbox are more appropriate for start-up projects. The most twitted and most appreciated tools are reported as Jira, Trello, and VersionOne. SpiraTeam by Inflectra and Pivotal Tracker are other pricing and popular agile tools, providing flexibility to Agile developers and increase collaboration among team members.</p>
+                        <h2><a href="https://tez.yok.gov.tr/UlusalTezMerkezi/tezSorguSonucYeni.jsp"> Aspect-based Sentiment Analysis in Turkish.</a></h2>
+                        <p><b>Abstract:</b>
+                           : Most customers rely on reviews and comments of other consumers that already purchased and used the products that they intend to purchase. As the sharing opinions and preferences of people on online platforms are widespread, these huge data sources are highly valuable to companies to gather feedback on their products. Therefore, researchers have an essential data mining goal to extract useful information from sentiments. In this thesis, the aim is to perform an aspect-based analysis to determine the sentiment polarity of the reviews for a smart phone using natural language processing techniques in Turkish for the performance, price and camera aspects. The techniques used are data preprocessing, explicit and implicit feature extraction as well as grouping corresponding aspects and lexicon-based sentiment analysis at word-level and word-group level. The evaluations show that the highest values of precision, recall and f1 measure for the aspects examined are found to be 93%, 94% and 93%, respectively. These results reveal that our study has remarkable performance compared to other Turkish aspect-based sentiment analysis studies.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+{% include "footer.html" %}
