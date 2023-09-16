@@ -20,15 +20,6 @@ def about():
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
-    if request == "POST":
-        data = request.form
-        username = data.get("username")
-        email = data.get("email")
-        phone = data.get("phone")
-        message = data.get("message")
-        smtp_obj = smtplib.SMTP('localhost')
-        smtp_obj.sendmail(email, my_email, message)
-        return render_template("index.html")
     return render_template("contact.html")
 
 
