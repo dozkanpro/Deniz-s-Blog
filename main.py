@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import requests
-import smtplib
+
 
 my_email = 'denizkozkan@gmail.com'
 posts = requests.get("https://api.npoint.io/6bbc25718782fbf15188", verify=False).json()
